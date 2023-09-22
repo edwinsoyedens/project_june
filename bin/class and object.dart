@@ -5,7 +5,7 @@ import 'package:test/expect.dart';
 ///class creation -
 /*
 void main(){}
- class className {
+ class ClassName {
       instance variable
       static variables
       constructors
@@ -36,7 +36,7 @@ class Students{
   static String course = "Flutter";
 }
   void main(){
-  Students st1 = Students();
+  Students st1 = Students();  ///we can also type as var st1 = Students();
   print("Student 1 details");
   print("name   = ${st1.name = "Messi"}");
   print("age    = ${st1.age = 34}");
@@ -51,7 +51,7 @@ class Students{
   print("age    = ${st2.age = 32}");
   print("email  = ${st2.email = "dimaria11@gmail.com"}");
   print("phone  = ${st2.phone = 9567678397}");
-  print("course = ${Students.course}");
+  print("course = ${Students.course = 'cyber security'}");  ///if we want to change course we can give as print("course = ${students.course = "cyber security"}");
 
   print("----------------------------------------------------");
 

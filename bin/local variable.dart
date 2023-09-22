@@ -2,7 +2,7 @@
 ///                 -> create inside the function/constructor/blocks
 ///                 -> local variable cannot be accessed from outside the function/constructor/block
 
-//user defined function
+//user defined function without class
 void myfunction() {
   //here a and b are local variables
   int a = 100, b=200;
@@ -14,10 +14,10 @@ class A {
   int a = 10, b = 20; //instance variable
 //user defined method
  void add() {
-   int sum = a+b;
-   print("sum = $sum");                  //here sum is local variable a & b are instance variable
-                                        // instance variable can be accessed inside the class without using object
-                                        // instance variables can be accessed outside the class using object
+   int sum = a+b;                        //here sum is local variable a & b are instance variable
+   print("sum = $sum");                 // instance variable can be accessed inside the class without using object
+                                       // instance variables can be accessed outside the class using object
+
  }
 }
 
@@ -48,7 +48,7 @@ class Maths {
 
 
   void div() {
-    double div = a/b;
+    dynamic div = a/b;
     print('div = $div');
   }
 }
